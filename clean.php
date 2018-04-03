@@ -2,7 +2,7 @@
  
 //Script PHP ** Récupere les adresses MAC et PORTS associés
  
- $a = snmpwalk("10.81.1.126", "public", "1.3.6.1.2.1.17.4.3");
+ $a = snmpwalk("10.XX.X.XXX", "public", "1.3.6.1.2.1.17.4.3");
  
 
  
@@ -22,7 +22,7 @@
 	snmp_set_oid_output_format(SNMP_OID_OUTPUT_NUMERIC);
  
 	$OID = '.1.3.6.1.2.1.4.22.1.2';
-	$X = snmprealwalk('10.81.1.126', 'public', $OID);
+	$X = snmprealwalk('10.XX.X.XXX', 'public', $OID);
 	foreach($X as $key => $value) {
 		
 		$IP = substr($key, strlen($OID)+2);

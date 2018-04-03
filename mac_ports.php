@@ -1,6 +1,6 @@
 <?php
 
- $a = snmpwalk("10.81.1.126", "public", "1.3.6.1.2.1.17.4.3");
+ $a = snmpwalk("10.XX.X.XXX", "public", "1.3.6.1.2.1.17.4.3");
  
 	// on coupe le tableau en deux tableaux : macs et ports
 	
